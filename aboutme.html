@@ -54,7 +54,7 @@
         <img src="https://github.com/amao611/portfolio/blob/master/sidescroller.PNG?raw=true" alt="Image of side scroller game" style="width: 500px">
     <br>
           <p>I worked with another person to make a color filter on Python, based off of the Obamicon.</p>
-          <img src="https://github.com/amao611/portfolio/blob/master/recolored.jpg?raw=true">
+          <img onmouseenter="bigcaticon(this)" onmouseleave="normalcaticon(this)" src="https://github.com/amao611/portfolio/blob/master/recolored.jpg?raw=true">
           
     <h4>Fun Links</h4>
     <p><a href="https://scratch.mit.edu/users/alarmadillo/">https://scratch.mit.edu/users/alarmadillo/</a></p> 
@@ -113,6 +113,14 @@
 
     <script>
       window.alert("Welcome to my webpage!");
+      function bigcaticon(x) {
+        x.style.height = "500px";
+        x.style.width = "500px";
+      }
+      function normalcaticon(x) {
+        x.style.height = "400px";
+        x.style.width = "400px";
+      }
     </script>
          
   </body>
