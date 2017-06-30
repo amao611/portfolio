@@ -111,9 +111,10 @@ body {font-family: Verdana,sans-serif;margin:0}
    <div style="width:100%">
       <h3 style="font-family:Palatino"><ins>WHO I AM</ins></h3>
       <p style="width:100%">Hi, my name is Alice Mao. I am a high school student in California, and I am learning to code using various languages, such as HTML and CSS. Some of my interests include science and math, and I am excited to learn more about tech and other related topics!
-   
-      <h3 style="font-family:Palatino"><ins>Fun Fact</ins></h3>
-      <p style="width:100%">I love to travel, and I have traveled in Asia, Europe, and the Americas. I have yet to go to Africa and Antarctica.</p>
+     
+    <button onclick="myFunction()">Fun Fact</button>
+    <p id="funfact"></p> 
+     
    </div>
    
     <table style="width:100%; background-color:white">
@@ -264,6 +265,9 @@ body {font-family: Verdana,sans-serif;margin:0}
          }
          slides[slideIndex-1].style.display = "block"; 
          dots[slideIndex-1].className += " active";
+     }
+     function funfact() {
+       document.getElementById("funfact").innerHTML = "I love to travel, and I have traveled in Asia, Europe, and the Americas. I have yet to go to Africa and Antarctica.";
      }
     </script>
          
