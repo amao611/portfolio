@@ -267,6 +267,7 @@ div.tab button.active {
    
    <script>
       window.alert("Welcome to my webpage!");
+     
       function bigcaticon(x) {
         x.style.height = "500px";
         x.style.width = "500px";
@@ -275,6 +276,20 @@ div.tab button.active {
         x.style.height = "400px";
         x.style.width = "400px";
       }
+     
+     function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+       tabcontent = document.getElementsByClassName("tabcontent");
+       for (i = 0; i < tabcontent.length; i++) {
+           tabcontent[i].style.display = "none";
+       }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+     }
      
      var slideIndex = 1;
      showSlides(slideIndex);
