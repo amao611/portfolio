@@ -1,13 +1,13 @@
 window.alert("Welcome to my webpage!");
 
 function bigcaticon(x) {
- x.style.height = "500px";
- x.style.width = "500px";
+ x.style.height = "300px";
+ x.style.width = "300px";
 }
 
 function normalcaticon(x) {
- x.style.height = "400px";
- x.style.width = "400px";
+ x.style.height = "200px";
+ x.style.width = "200px";
 }
 
 function openCity(evt, cityName) {
