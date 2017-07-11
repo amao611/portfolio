@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="aboutme.css">
-   <script src="aboutme.js"></script>
-<title>Alice Mao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="aboutme.css">
+  <script src="aboutme.js"></script>
+  <title>Alice Mao</title>
 </head>
+
 <body style="font-family:Verdana; background-color:#ECF0F1">
 
-    <h1 style="text-align:center; color:darkred">About Me</h1>
-    <h2 style="text-align:center">Alice Mao</h2>
-    <hr>
+  <!-- heading -->
+  <h1 style="text-align:center; color:darkred">About Me</h1>
+  <h2 style="text-align:center">Alice Mao</h2>
+  <hr>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'WHO I AM')">WHO I AM</button>
-  <button class="tablinks" onclick="openCity(event, 'WORKS')">WORKS</button>
-  <button class="tablinks" onclick="openCity(event, 'CORE4')">CORE4</button>
-</div>
-
-<div id="WHO I AM" class="tabcontent">
-  <h3>WHO I AM</h3>
-     
-  <img src="https://github.com/amao611/portfolio/blob/master/received_429249904128603.jpeg?raw=true" width="100" height="120.3">
-
-   <div style="width:100%">
-     <p style="width:100%">Hi, my name is Alice Mao. I am a high school student in California, and I am learning to code using various languages, such as HTML and CSS. Some of my interests include science and math, and I am excited to learn more about tech and other related topics!
-     <br>   
-     <button onclick="funfactfunction()">Fun Fact</button>
-     <p style="font-size:15px" id="funfact"></p> 
-   </div>
-   
-   <h4 style="font-size:20px; text-align:center">Places I've Visited</h4>
-   
-  <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="https://en.parisinfo.com/var/otcp/sites/images/media/1.-photos/02.-sites-culturels-630-x-405/arc-de-triomphe-de-face-630x405-c-thinkstock/35754-1-fre-FR/Arc-de-Triomphe-de-face-630x405-C-Thinkstock.jpg" style="width:100%">
-    <div class="text">Arc de Triomphe - Paris, France</div>
+  <!-- navigation menu -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'WHO I AM')">WHO I AM</button>
+    <button class="tablinks" onclick="openCity(event, 'WORKS')">WORKS</button>
+    <button class="tablinks" onclick="openCity(event, 'CORE4')">CORE4</button>
   </div>
 
-  <div class="mySlides fade">
-    <img src="http://www.travel-to-venice.com/images/gallery/cache/341_crop_616x300_DSCN1905.jpg" style="width:100%">
-    <div class="text">Campanile Tower - Venice, Italy</div>
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="http://www.alaskatrain.com/photos/medium/denali-park.jpg" style="width:100%">
-    <div class="text">Denali National Park - Alaska, USA</div>
-  </div>
-   
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
- </div>
-<br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-   
+  <!-- who i am tab-->
+  <div id="WHO I AM" class="tabcontent">
+    <h3>WHO I AM</h3>
+
+    <!-- profile pic -->
+    <img src="https://github.com/amao611/portfolio/blob/master/received_429249904128603.jpeg?raw=true" width="100" height="120.3">
+
+    <!--brief bio-->
+    <div style="width:100%">
+      <p style="width:100%">Hi, my name is Alice Mao. I am a high school student in California, and I am learning to code using various languages, such as HTML and CSS. Some of my interests include science and math, and I am excited to learn more about tech and other related
+        topics!
+        <br>
+
+        <!--fun fact-->
+        <button onclick="funfactfunction()">Fun Fact</button>
+        <p style="font-size:15px" id="funfact"></p>
+    </div>
+
+    <!--carousel-->
+    <h4 style="font-size:20px; text-align:center">Places I've Visited</h4>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="https://en.parisinfo.com/var/otcp/sites/images/media/1.-photos/02.-sites-culturels-630-x-405/arc-de-triomphe-de-face-630x405-c-thinkstock/35754-1-fre-FR/Arc-de-Triomphe-de-face-630x405-C-Thinkstock.jpg" style="width:100%">
+        <div class="text">Arc de Triomphe - Paris, France</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="http://www.travel-to-venice.com/images/gallery/cache/341_crop_616x300_DSCN1905.jpg" style="width:100%">
+        <div class="text">Campanile Tower - Venice, Italy</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="http://www.alaskatrain.com/photos/medium/denali-park.jpg" style="width:100%">
+        <div class="text">Denali National Park - Alaska, USA</div>
+      </div>
+
+      <!--prev next buttons-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!--dot buttons for prev and next-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--likes and dislikes-->
     <table style="width:100%; background-color:white">
       <tr style="font-family:Palatino; height:50px; font-size:20px; background-color:#EBDEF0">
         <th style="color:teal">Likes</th>
@@ -76,80 +90,83 @@
         <td style="color:teal">Playing sports competitively</td>
       </tr>
     </table>
-</div>
+  </div>
 
-<div id="WORKS" class="tabcontent">
-   <h3>WHAT I'VE MADE</h3>
-   <h5>Scratch</h5>
+  <!--Works tab-->
+  <div id="WORKS" class="tabcontent">
+    <h3>WHAT I'VE MADE</h3>
+    <!--Scratch stuff-->
+    <h5>Scratch</h5>
     <p>Using Scratch, I made a little side-scroller game called "J-walking", where you control a person trying to reach his office building within the time limit. The problem is, there are cars that rush by, and you have to dodge them.</p>
-        <img src="https://github.com/amao611/portfolio/blob/master/sidescroller.PNG?raw=true" alt="Image of side scroller game" style="width: 500px">
+    <img src="https://github.com/amao611/portfolio/blob/master/sidescroller.PNG?raw=true" alt="Image of side scroller game" style="width: 500px">
     <br>
-   <h5>Python</h5>
-          <p>I worked with another person to make a color filter on Python, based off of the Obamicon.</p>
-          <img onmouseenter="bigcaticon(this)" onmouseleave="normalcaticon(this)" src="https://github.com/amao611/portfolio/blob/master/recolored.jpg?raw=true">
-          
+    <!--Python stuff-->
+    <h5>Python</h5>
+    <p>I worked with another person to make a color filter on Python, based off of the Obamicon.</p>
+    <img onmouseenter="bigcaticon(this)" onmouseleave="normalcaticon(this)" src="https://github.com/amao611/portfolio/blob/master/recolored.jpg?raw=true">
+
+    <!--links-->
     <h4>Fun Links</h4>
     <p><a href="https://scratch.mit.edu/users/alarmadillo/">My Scratch</a></p>
     <p><a href="https://github.com/amao611">My Github</a></p>
     <p><a href="https://www.youtube.com/watch?v=WQO-aOdJLiw">Weird Video (not mine)</a></p>
-</div>
+  </div>
 
-<div id="CORE4" class="tabcontent">
-    
+  <!--Core4 tab-->
+  <div id="CORE4" class="tabcontent">
     <h3>Core4 Fundamentals</h3>
-      <div>
-         <h4>Variables</h4>
-         <h5>Definition</h5>
-         <p>used to store different data types</p>
-   </div>
-       <table style="width:100%; table-layout:fixed; word-wrap:break-word">
-         <tr>
-            <th>Variables</th>
-            <th>Conditionals</th>
-            <th>Loops</th>
-            <th>Functions</th>
-         </tr>
-         <tr>
-             <td>store different data types</td>
-             <td>execute statements based on a boolean condition</td>
-             <td>repeats a statement while a given condition is true or false</td>
-             <td>readable and usable block of code</td>
-         </tr>
-         <tr>
-           <td>user_input = input()</td>
-           <td>if user_input == "left":
-               <br>
-               print("You decide to go left...)
-               <br>
-               break</td>
-           <td>for edges in range (3):
-               <br>
-               pendown()
-               <br>
-               forward(100)
-               <br>
-               right(120)</td>
-           <td>while True:
-             <br>
-             user_input = input()
-             <br>
-             if user_input == "left":
-             <br>
-             print("You decide to go left...")
-             <br>
-             break</td>
-         </tr>
-         <tr>
-           <td><img src="https://github.com/amao611/portfolio/blob/master/scratchvariable.PNG?raw=true"></td>
-           <td><img src="https://github.com/amao611/portfolio/blob/master/scratchconditional.PNG?raw=true"></td>
-           <td><img src="https://github.com/amao611/portfolio/blob/master/scratchloop.PNG?raw=true"></td>
-           <td><img src="https://github.com/amao611/portfolio/blob/master/scratchfunction.PNG?raw=true"></td>
-         </tr>
-         <tr>
-           <td>A variable is like a name tag that you fill in with random names.</td>
-         </tr>
-  </table>
-</div>    
-         
-  </body>
+    <div>
+      <h4>Variables</h4>
+      <h5>Definition</h5>
+      <p>used to store different data types</p>
+    </div>
+    <table style="width:100%; table-layout:fixed; word-wrap:break-word">
+      <tr>
+        <th>Variables</th>
+        <th>Conditionals</th>
+        <th>Loops</th>
+        <th>Functions</th>
+      </tr>
+      <!--definitions-->
+      <tr>
+        <td>store different data types</td>
+        <td>execute statements based on a boolean condition</td>
+        <td>repeats a statement while a given condition is true or false</td>
+        <td>readable and usable block of code</td>
+      </tr>
+      <!--example in python -->
+      <tr>
+        <td>user_input = input()</td>
+        <td>if user_input == "left":
+          <br> print("You decide to go left...)
+          <br> break
+        </td>
+        <td>for edges in range (3):
+          <br> pendown()
+          <br> forward(100)
+          <br> right(120)
+        </td>
+        <td>while True:
+          <br> user_input = input()
+          <br> if user_input == "left":
+          <br> print("You decide to go left...")
+          <br> break
+        </td>
+      </tr>
+      <!--example in Scratch-->
+      <tr>
+        <td><img src="https://github.com/amao611/portfolio/blob/master/scratchvariable.PNG?raw=true"></td>
+        <td><img src="https://github.com/amao611/portfolio/blob/master/scratchconditional.PNG?raw=true"></td>
+        <td><img src="https://github.com/amao611/portfolio/blob/master/scratchloop.PNG?raw=true"></td>
+        <td><img src="https://github.com/amao611/portfolio/blob/master/scratchfunction.PNG?raw=true"></td>
+      </tr>
+      <!--analogy (is a work in progress)-->
+      <tr>
+        <td>A variable is like a name tag that you fill in with random names.</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+
 </html>
